@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="styles/tree.css" />
+    <script type="text/javascript" src="js/tree.js"></script>
+  </head>
+  <body>
+
+    <div class="wrapper blocking">
+      <svg
+        xmlns:svg="http://www.w3.org/2000/svg"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        id="sliding-box"
+        width="400" height="600" version="1.0"
+        viewBox="0 0 400 600">
+        <g fill="green" stroke="white" stroke-width="1">
+          <path d="M0,0 400,0 400,600 0,600z" />
+        </g>
+      </svg>
+
+      <svg 
+        xmlns:svg="http://www.w3.org/2000/svg"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        id="overlay-box"
+        width="400" height="600" version="1.0"
+        viewBox="0 0 400 600">
+        <g fill-rule="evenodd" fill="tan" stroke="white" stroke-width="0">
+          <path d="
+            M0,0 0,600 400,600 400,0z
+            M200,20 250,100 220,100 280,200 250,200 310,350 280,350 340,500 60,500 120,350 90,350 150,200 120,200 180,100 150,100"></path>
+            
+            <!-- STAR -->
+            <polygon points="200,5 205,20 220,20 210,30 215,40 200,35 185,40 190,30 180,20, 195,20" stroke="transparent" fill="yellow" stroke-width="1"/>
+          
+            <!-- FOOTER -->
+            <rect x="180" y="500" width="40" height="60" stroke="transparent" fill="brown" stroke-width="5"/>
+          
+            <!-- RIBBONS -->
+            <path class="path" fill="transparent" stroke="purple" stroke-width="6" stroke-linecap="round" d="M 150,100 C 200,140 220,180 270,200"></path>
+            <path class="path" fill="transparent" stroke="purple" stroke-width="6" stroke-linecap="round" d="M 270,200 C 250,230 220,280 100,350"></path>
+            <path class="path" fill="transparent" stroke="purple" stroke-width="6" stroke-linecap="round" d="M 100,350 C 190,400 270,480 330,500"></path>
+
+            <!-- BALLS -->
+            <circle cx="150" cy="100" r="10" stroke="transparent" fill="red" stroke-width="1">
+              <animate attributeType="XML" attributeName="fill" values="red;maroon;red;red" dur="0.8s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="250" cy="100" r="10" stroke="transparent" fill="red" stroke-width="1">
+              <animate attributeType="XML" attributeName="fill" values="red;maroon;red;red" dur="1.2s" repeatCount="indefinite"/>
+            </circle>
+    
+            <circle cx="120" cy="200" r="10" stroke="transparent" fill="pink" stroke-width="1">
+              <animate attributeType="XML" attributeName="fill" values="pink;red;pink;pink" dur="1.2s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="280" cy="200" r="10" stroke="transparent" fill="pink" stroke-width="1">
+              <animate attributeType="XML" attributeName="fill" values="pink;red;pink;pink" dur="0.8s" repeatCount="indefinite"/>
+            </circle>
+    
+            <circle cx="90" cy="350" r="10" stroke="transparent" fill="silver" stroke-width="1">
+              <animate attributeType="XML" attributeName="fill" values="silver;blue;silver;silver" dur="0.8s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="310" cy="350" r="10" stroke="transparent" fill="silver" stroke-width="1">
+              <animate attributeType="XML" attributeName="fill" values="silver;blue;silver;silver" dur="1.2s" repeatCount="indefinite"/>
+            </circle>
+    
+            <circle cx="60" cy="500" r="10" stroke="transparent" fill="blue" stroke-width="1">
+              <animate attributeType="XML" attributeName="fill" values="blue;silver;blue;blue" dur="1.2s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="340" cy="500" r="10" stroke="transparent" fill="blue" stroke-width="1">
+              <animate attributeType="XML" attributeName="fill" values="blue;silver;blue;blue" dur="0.8s" repeatCount="indefinite"/>
+            </circle>
+    
+        </g>
+      </svg>
+    </div>    
+
+    <div>
+        <input type="range" id="slider" name="slider" min="0" max="500" value="500" step="5">
+        <label for="slider">Position</label>
+    </div>
+  </body>
+</html>
