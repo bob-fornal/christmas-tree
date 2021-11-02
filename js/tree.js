@@ -1,15 +1,3 @@
-// $(document).ready(function() {
-//   var slidingBox = $("#sliding-box");
-
-//   $('#overflow').on('click', function() {
-//       $('.sliding-background').toggleClass('blocking');
-//   });
-
-//   $('#slider').on('change mousemove', function () {
-//       var value = $(this).val();
-//       slidingBox.attr('style', `top: ${value}px`);
-//   });
-// });
 
 const onReady = (callback) =>{
   if (document.readyState!='loading') callback();
@@ -19,7 +7,7 @@ const onReady = (callback) =>{
   });
 };
 
-const setStyle = value => slidingBox.style.cssText = `top: ${ value }px;`;
+const setStyle = value => slidingBox.style.cssText = `top: ${ 600 - value }px;`;
 
 const handleSliderEvent = (event) => {
   const value = event.target.value;
