@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="styles/tree.css" />
+    <script type="text/javascript" src="js/tree.js"></script>
+  </head>
+  <body>
+
+    <div class="outer-wrapper">
+      <div class="wrapper blocking">
+        <svg
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          id="sliding-box"
+          width="400" height="600" version="1.0"
+          viewBox="0 0 400 600">
+          <g fill="#94d60a" stroke="white" stroke-width="1">
+            <path d="M0,0 400,0 400,600 0,600z" />
+          </g>
+        </svg>
+
+        <svg 
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          id="overlay-box"
+          width="400" height="600" version="1.0"
+          viewBox="0 0 400 600">
+          <g fill-rule="evenodd" fill="gold" stroke="white" stroke-width="0">
+            <path d="
+              M0,0 0,600 400,600 400,0z
+              M200,20 250,100 220,100 280,200 250,200 310,350 280,350 340,500 60,500 120,350 90,350 150,200 120,200 180,100 150,100 200,20"></path>      
+          </g>
+        </svg>
+      </div>
+
+      <div>
+          <input type="range" id="slider" name="slider" min="100" max="600" value="600" step="5">
+          <label for="slider">Position</label>
+      </div>
+    </div>
+
+  </body>
+</html>

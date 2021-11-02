@@ -1,0 +1,51 @@
+
+.outer-wrapper {
+  text-align: center;
+}
+
+.wrapper {
+  display: inline-block;
+  width: 400px;
+  height: 600px;
+}
+.blocking {
+  overflow: hidden;
+}
+
+label {
+  font-family: Arial;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+.controls {
+  left: 250px;
+  padding: 1rem;
+  position: relative;
+  top: -200px;
+}
+
+#sliding-box {
+  position: relative;
+}
+
+#overlay-box {
+  position: relative;
+  top: -604px;
+}
+
+#overflow {
+  margin-bottom: 1rem;
+}
+
+.path {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 100;
+  pointer-events: none;
+  animation: firstAnimation 1s linear forwards infinite;
+}
+
+@keyframes firstAnimation {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
