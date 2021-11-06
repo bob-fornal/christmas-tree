@@ -3,10 +3,11 @@
   <head>
     <link type="text/css" rel="stylesheet" href="styles/tree.css" />
     <script type="text/javascript" src="js/tree.js"></script>
+    <script type="text/javascript" src="js/interaction.js"></script>
   </head>
   <body>
 
-    <div class="outer-wrapper">
+    <div class="outer-wrapper" id="triggerEvent">
       <div class="wrapper blocking">
         <svg
           xmlns:svg="http://www.w3.org/2000/svg"
@@ -19,6 +20,9 @@
             <path d="M0,0 400,0 400,600 0,600z" />
           </g>
         </svg>
+
+        <img id="train" class="image" src="images/train.png" />
+        <img id="santa" class="image" src="images/santa.png" />
 
         <svg 
           xmlns:svg="http://www.w3.org/2000/svg"
